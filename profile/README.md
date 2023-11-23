@@ -1,12 +1,115 @@
-## Hi there 👋
+# We Are the Team AllClimbing
 
-<!--
+## 📌 프로젝트 개요
 
-**Here are some ideas to get you started:**
+### 1️⃣ 프로젝트 목표
 
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
+🟢 웹 아키텍처를 이해하고 이를 활용하여 웹 프로젝트를 설계하고 구현할 수 있다.
+
+🟢 SpringBoot와 Vue를 이해하고 활용할 수 있다.
+
+🟢 Rest API와 VueRouter을 활용하여 SPA 방식으로 프로젝트를 구성할 수 있다.
+
+🟢 기존 관통 프로젝트에 새로운 아이디어를 추가하여 과정에서 배운 기술들을 다양하게 구현해 본다.
+
+<br>
+
+
+### 2️⃣ 요구사항
+
+🟢 기존 진행한 관통 프로젝트의 요구사항을 정리하고 페어 별로 프로젝트에 적용할 아이디어를 추가하여 Final Project를 완성한다.
+
+🟢 SpringBoot와 MyBatis연동을 활용한 RestAPI 서버 구현
+
+🟢 Vue3버전을 활용한 SPA 클라이언트 구현
+
+<br>
+
+## 📌 프로젝트 진행 
+
+### 0️⃣ 기획 단계
+
+#### ✅ 가설 설정 및 문제 정의
+
+- 클라이밍을 주로 즐기는 연령대는 아마 20대 초반 ~ 20대 후반의 남녀일 것으로 가정
+- 클라이밍을 가려고 할때, 여러 분산된 정보 플랫폼에서 정보를 찾느라 낭비하는 시간이 많을 것이다.
+- 클라이밍 대회 정보를 보고 싶을 것이다.
+
+**가설 설정 : 즉 20대 초, 중, 후반 남녀가 암장과 클라이밍 정보를 찾을때, 많은 정보가 분산돼있어 암장 검색시 시간이 오래걸리는 문제가 존재할 것이다.**
+
+#### ✅ 정성적 리서치 (인터뷰 2인)
+
+🟢 사례1 : 친구들과의 실내 암벽등반을 즐기는 진종인(29, 남) 씨
+
+  - 진종인 씨는 친구들과의 클라이밍을 즐긴다.
+  - 친구들과 함께 놀려고 실내 클라이밍 암장을 찾아보려고 한다.
+  - 네이버 지도앱에 들어가서 "클라이밍"으로 검색한다.
+  - 암장의 위치와 간략한 정보는 나와있지만, 해당 암장에 주차장이 있는지,
+  친구들과 함께 갈 정도로 넓은지, 샤워실이 있는지 등의
+  자세한 정보들은 나와있지 않다.
+  - 대회는 별로 관심이 없다.
+  
+  요약 : 샤워실 정보, 주차 여부 등 암장들의 상세정보를 찾을 수 있는 플랫폼이 존재했으면 좋겠다.
+
+<br>
+
+🟢 사례2 : 클라이밍이 취미인 이지은(25, 여) 씨
+
+  - 이지은 씨는 태생이 클라이머다.
+  - 일주일에 3번 이상 클라이밍을 하러 다닌다.
+  - 주변 클라이밍 암장은 모두 정복하여, 다른 암장들을 찾으러 다닌다.
+  - 클라이밍 고인물인 이지은 씨는 좀 어려운 난이도의 암장을 찾고싶다.
+  - 네이버 지도를 통해서는 암장들의 난이도도 알기 어렵고, 리뷰들도 주관적이라 
+  인스타그램, 네이버 블로그, 인터넷 커뮤니티 등을 통해 암장 정보를 일일이 찾아봐야한다.
+  - 유일한 클라이밍 어플에서는 자신이 방문한 암장 기록은 쉽게 확인할 수 있지만,
+    암장들의 상세한 정보는 알기 어렵다.
+  - 또한, 다녀왔던 암장들의 구역 홀드가 변경 됐으면 가려고 하는데,
+  암장들의 전화번호를 일일이 찾아 연락하기가 귀찮다. 
+  
+  요약 : 암장의 상세한 정보들과 연락처들을 한 데 모아둔 곳이 있고,
+  갱신된 정보 등을 바로바로 알 수 있는 서비스가 있으면 좋겠다.
+  또, 정보와 함께 클라이밍을 즐기는 사람들이 쓴 리뷰들 위주로 볼 수 있는
+  커뮤니티 서비스가 있으면 좋겠다.
+<br>
+
+#### ✅ 타겟 유저와 페르소나 정의
+
+- **타겟 유저는 직접 대안을 통해 문제를 해결하는 고객으로 한정**
+- SNS를 사용하지 않고, 다양한 클라이밍 정보를 모바일 웹에서 편리하게 조회할 수 있도록 플랫폼을 한정(데스크탑 웹은 네이버의 존재)
+- 김클밍(25세 남자 대학생) => 서울 소재 대학에 2학년으로 재학중인 무직 대학생으로,
+- 월 소비는 약 50만원 정도, sns는 정보 조회용으로만 사용하며, 여러 플랫폼보다는 하나의 플랫폼에서 클라이밍 정보를 조회하고 싶어함
+
+### 1️⃣ 요구사항 정의
+
+🟢 클라이밍 암장의 정보를 제공하는 웹 서비스를 구현한다.
+
+  - 카카오맵 API를 이용한 암장 검색 기능 및 주변 암장 조회 기능을 구현한다.
+  - 암장 상세보기 기능을 제공한다.
+  - 암장 상세 페이지에서 리뷰 조회 및 작성, 수정, 삭제 기능을 구현한다.
+  - 로그인/로그아웃 및 마이페이지를 구현한다.
+
+
+### 2️⃣ 페이지 정의서 & 와이어프레임
+
+<img src="https://github.com/jseok0917/jseok0917/assets/139304962/bf23f389-aab4-4010-8078-18a66bb709ab" style="width : 700px" />
+<img src="https://github.com/jseok0917/jseok0917/assets/139304962/4bbd2495-ab13-4662-bffb-86be3ed90fe5" />
+
+<br>
+<br>
+
+### 3️⃣ 프로젝트 요구사항 정의서 
+
+<img src="https://github.com/jseok0917/jseok0917/assets/139304962/527f4131-5121-4bc2-8469-92077b96fb5c" style="width : 900px"/>
+
+<br>
+<br>
+
+### 4️⃣ 화면 설계서
+
+<img src="https://github.com/jseok0917/jseok0917/assets/139304962/34863f44-d0cb-43ec-b7e7-a57f852dac92" style="width : 900px"/>
+
+<img src="https://github.com/jseok0917/jseok0917/assets/139304962/a746c2b0-648f-4ab6-9fb2-888243b2b4c5" style="width : 900px"/>
+
+<br>
+<hr>
+<br>
